@@ -12,6 +12,7 @@ Each section will have a snippet, that may be blocks of code, for specific purpo
 
 ```bash
 python
+
 ```
 
 ```
@@ -25,6 +26,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 ```bash
 exit()
+
 ```
 
 ### 1st Snippet 
