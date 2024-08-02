@@ -32,7 +32,11 @@ exit()
 ### 1st Snippet 
 ```python
 # below line builds a list with ip addresses ranging from 192.168.1.1 to 192.168.1.254
-ips = ["192.168.1.{}".format(str(i)) for i in range(1,255)]
+# ips = ["192.168.1.{}".format(str(i)) for i in range(1,255)]
+# This specific snippet is for GNS3 or network lab work where each consecutive device 
+# gets a loopback0 IP of 1.1.1.1, 2.2.2.2 depending on number of switch
+
+ips = ["{}.{}.{}.{}".format(i, i, i, i) for i in range(1,7)]
 print(ips)
 # or use for loop for individuals per line
 #for i in ips:
