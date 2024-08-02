@@ -9,7 +9,12 @@ Each section will have a snippet, that may be blocks of code, for specific purpo
 * These scripts will be able to be copied from the github readme page and pasted directly where you need them.
 * These copied snippets can be tested by instantiating the python interpreter on your local CLI and pasting the snippet in the interpreter.
 ### Example python interpreter
+
 ```bash
+python
+```
+
+```
 # python
 Python 3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
