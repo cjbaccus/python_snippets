@@ -48,9 +48,12 @@ if not ips:
 	ips["1.1.1.1","192.168.1.1", "10.10.10.10","8.8.8.8"]
 else:
 
+print("Using ips from previous snippet")
+
 with open("ipaddresses1.txt", "w") as invt:
   for ip in ips:
 	  invt.write(ip+"\n")
+	print("File ipaddresses1.txt has been written!")
 
 #This should result in a file written in directory you are in with an ip per line
 
