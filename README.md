@@ -36,7 +36,7 @@ print(ips)
 #write a comment style line out with a couple of variables for name  and IP
 hst = "host1"
 ip = "192.168.1.1"
-print("!"*50 + "H: {} IP: {}".format(hst,ip) + "!"*50)
+print("!"*50 + "Host: {} IP: {}".format(hst,ip) + "!"*50)
 
 ```
 
