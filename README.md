@@ -44,11 +44,12 @@ print("!"*50 + "Host: {} IP: {}".format(hst,ip) + "!"*50)
 ```python
 #If combined with Snippet 1 this will write a flat text file with ip addresses in it from ips
 #otherwise it will just write out ips from variable below (if else checks to see if ips is empty
-if not ips:
-	ips = ["1.1.1.1","192.168.1.1", "10.10.10.10","8.8.8.8"]
+try:
+  ips
+except NameError:
+  ips = ["1.1.1.1","2.2.2.2"]
 else:
-
-print("Using ips from previous snippet")
+  print("ips are populated from snippet 1")
 
 with open("ipaddresses1.txt", "w") as invt:
   for ip in ips:
