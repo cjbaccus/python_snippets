@@ -104,6 +104,16 @@ if ipfile:
 else:
     print("No ipaddresses file found exiting now!")
 
+```python
+with open('inventory_ansible.py') as file:
+  exec(file.read())
+
+# You can copy and rename 'inventory_ansible.py' with whatever python script you need to execute
+
 ```
+### 5th Snippet
+
+```python
+# This script will execute another python file from within a python script or interpreter
 
 
