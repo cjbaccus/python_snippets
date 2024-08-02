@@ -40,3 +40,17 @@ print("!"*50 + "Host: {} IP: {}".format(hst,ip) + "!"*50)
 
 ```
 
+### 3rd Snippet
+```python
+#If combined with Snippet 1 this will write a flat text file with ip addresses in it from ips
+#otherwise it will just write out ips from variable below (if else checks to see if ips is empty
+if not ips:
+	ips["1.1.1.1","192.168.1.1", "10.10.10.10","8.8.8.8"]
+else:
+
+with open("ipaddresses1.txt", "w") as invt:
+  for ip in ips:
+	  invt.write(ip)
+
+#This should result in a file written in directory you are in with an ip per line
+
