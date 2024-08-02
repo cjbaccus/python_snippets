@@ -11,7 +11,7 @@ Each section will have a snippet, that may be blocks of code, for specific purpo
 ### Example python interpreter
 
 ```bash
-python
+/usr/bin/python
 
 
 ```
