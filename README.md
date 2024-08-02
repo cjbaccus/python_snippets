@@ -50,7 +50,7 @@ else:
 
 with open("ipaddresses1.txt", "w") as invt:
   for ip in ips:
-	  invt.write(ip)
+	  invt.write(ip+"\n")
 
 #This should result in a file written in directory you are in with an ip per line
 
