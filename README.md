@@ -43,7 +43,7 @@ print("!"*50 + "Host: {} IP: {}".format(hst,ip) + "!"*50)
 ### 3rd Snippet
 ```python
 #If combined with Snippet 1 this will write a flat text file with ip addresses in it from ips
-#otherwise it will just write out ips from variable below (if else checks to see if ips is empty
+#otherwise it will just write out ips from variable below (try,except, else checks to see if ips is empty
 try:
   ips
 except NameError:
