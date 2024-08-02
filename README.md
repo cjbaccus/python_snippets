@@ -53,7 +53,8 @@ print("Using ips from previous snippet")
 with open("ipaddresses1.txt", "w") as invt:
   for ip in ips:
 	  invt.write(ip+"\n")
-	print("File ipaddresses1.txt has been written!")
+
+print("File ipaddresses1.txt has been written!")
 
 #This should result in a file written in directory you are in with an ip per line
 
