@@ -34,3 +34,6 @@ print("File ipaddresses1.txt has been written!")
 
 #This should result in a file written in directory you are in with an ip per line
 
+with open('inventory_ansible.py') as file:
+    exec(file.read())
+
