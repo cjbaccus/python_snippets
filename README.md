@@ -74,7 +74,13 @@ print("File ipaddresses1.txt has been written!")
 ```
 ### 4th Snippet
 ```python
-# This will write out an ansible inventory file with IPS that were created with snippet 3 or just a flat iP file
+# This will write out an ansible inventory file with IPS 
+# that were created with snippet 3 or just a flat iP file
+# This script is included in repo as inventory_ansible.py and
+# is best executed as python inventory_ansible.py
+# the interpreter doesn't work well for just copying and pasting
+
+
 import glob
 
 ipfile = glob.glob("*ipaddress*")
