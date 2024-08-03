@@ -36,7 +36,7 @@ exit()
 # This specific snippet is for GNS3 or network lab work where each consecutive device 
 # gets a loopback0 IP of 1.1.1.1, 2.2.2.2 depending on number of switch
 
-ips = ["{}.{}.{}.{}".format(i, i, i, i) for i in range(1,7)]
+ips = [f"{i}.{i}.{i}.{i}" for i in range(1,7)]
 print(ips)
 # or use for loop for individuals per line
 #for i in ips:
@@ -46,7 +46,7 @@ print(ips)
 ```
 #### 1st Snippet (one liner)
 ```bash
-python -c 'ips = ["{}.{}.{}.{}".format(i, i, i, i) for i in range(1, 7)]; [print(ip) for ip in ips]' > ipaddresses101.txt
+python -c 'ips = [f"{i}.{i}.{i}.{i}" for i in range(1, 7)]; [print(ip) for ip in ips]' > ipaddresses101.txt
 
 
 
@@ -54,9 +54,9 @@ python -c 'ips = ["{}.{}.{}.{}".format(i, i, i, i) for i in range(1, 7)]; [print
 ### 2nd Snippet
 ```python
 #write a comment style line out with a couple of variables for name  and IP
-hst = "host1"
-ip = "192.168.1.1"
-print("!"*50 + "Host: {} IP: {}".format(hst,ip) + "!"*50)
+HST = "host1"
+IP = "192.168.1.1"
+print("!"*50 + f"Host: {HST} IP: {IP}" + "!"*50)
 
 ```
 
@@ -67,13 +67,13 @@ print("!"*50 + "Host: {} IP: {}".format(hst,ip) + "!"*50)
 #(try,except, else checks to see if ips is empty)
 
 try:
-  ips
+    ips
 except NameError:
-  ips = ["1.1.1.1","2.2.2.2"]
+    ips = ["1.1.1.1","2.2.2.2"]
 else:
-  print("ips are populated from snippet 1")
+    print("ips are populated from snippet 1")
 
-with open("ipaddresses1.txt", "w") as invt:
+with open("ipaddresses1.txt", "w", encoding="utf-8") as invt:
   for ip in ips:
 	  invt.write(ip+"\n")
 
@@ -96,14 +96,14 @@ import glob
 ipfile = glob.glob("*ipaddress*")
 #if else for if file exists or not
 if ipfile:
-    with open(ipfile[0], "r") as FH:
+    with open(ipfile[0], "r", encoding="utf-8") as FH:
         ipadds = []
 
         for line in FH.readlines():
           ipadds.append(line.strip())
 
-        group_name = "sw"
-        inventory = f"[{group_name}]\n"
+        GROUP_NAME = "sw"
+        inventory = f"[{GROUP_NAME}]\n"
         for index, ip in enumerate(ipadds, start=1):
             inventory += f"host_{index} ansible_host=\"{ip}\"\n"
 
