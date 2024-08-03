@@ -126,3 +126,10 @@ with open('inventory_ansible.py') as file:
 # You can copy and rename 'inventory_ansible.py' with whatever python script you need to execute
 
 ```
+
+#### 5th Snippet (one-liner)
+```bash
+python -c "with open('inventory_ansible.py') as file: exec(file.read())"
+
+
+```
