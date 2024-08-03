@@ -135,5 +135,22 @@ python -c "with open('inventory_ansible.py') as file: exec(file.read())"
 ```
 
 ```mermaid
-  info
+graph TD
+    Hub1[Hub Node 1]
+    Hub2[Hub Node 2]
+    Spoke1A[Spoke Node 1A]
+    Spoke1B[Spoke Node 1B]
+    Spoke1C[Spoke Node 1C]
+    Spoke2A[Spoke Node 2A]
+    Spoke2B[Spoke Node 2B]
+    Spoke2C[Spoke Node 2C]
+
+    Hub1 --> Spoke1A
+    Hub1 --> Spoke1B
+    Hub1 --> Spoke1C
+
+    Hub2 --> Spoke2A
+    Hub2 --> Spoke2B
+    Hub2 --> Spoke2C
+
 ```
