@@ -46,7 +46,7 @@ print(ips)
 ```
 #### 1st Snippet (one liner)
 ```bash
-python -c 'ips = ["{}.{}.{}.{}".format(i, i, i, i) for i in range(1, 7)]; [print(ip) for ip in ips]'
+python -c 'ips = ["{}.{}.{}.{}".format(i, i, i, i) for i in range(1, 7)]; [print(ip) for ip in ips]' > ipaddresses101.txt
 
 
 
