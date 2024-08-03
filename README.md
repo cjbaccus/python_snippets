@@ -133,3 +133,7 @@ python -c "with open('inventory_ansible.py') as file: exec(file.read())"
 
 
 ```
+
+```mermaid
+  info
+```
